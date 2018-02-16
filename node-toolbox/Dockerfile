@@ -12,6 +12,7 @@ WORKDIR /app
 USER node
 
 RUN npm install -g jshint jshint-json ethers-cli
+RUN npm install -g truffle
 RUN npm cache clean --force
 
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
